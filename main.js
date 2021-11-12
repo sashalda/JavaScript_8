@@ -44,6 +44,7 @@ librosInfatiles.push(new Libro("el principito", "antoine de saint-exupéry", 150
 
 const libros = librosGenerales.concat(librosInfatiles);
 
+/*
 do {
     var comprobacion = prompt("Ingrese el nombre de su libro o fin para terminar de agregar").toLowerCase();
     if (comprobacion === "fin") {
@@ -56,8 +57,8 @@ do {
     }
 }
 while(comprobacion !== "fin")
-
-console.log(libros);
+*/
+console.log(libros); 
 
 document.write("<h2>Listado de libros:</h2>");
 for (let libro of libros) {
@@ -94,3 +95,16 @@ for (let libro of dificilitos) {
     document.body.appendChild(divLibro);
 }
 
+/// DOM ///
+
+const formAbrir = document.getElementById('form-abrir');
+const formCerrar = document.getElementById('form-cerrar');
+const formContainer = document.getElementById('form-container')
+
+formAbrir.addEventListener('click', () => {
+    formContainer.classList.toggle('form-activo')
+})
+
+formCerrar.addEventListener('click', () => {
+    formContainer.classList.toggle('form-activo')
+})
