@@ -70,17 +70,25 @@ for (let libro of libros) {
     document.body.appendChild(divLibro);
 }
 
+
+
 // LIBROS FACIL DE LEER (MENOS DE 10 HORAS)
 
 var facilitos = libros.filter(libro => libro.cantidadHoras < 10);
 document.write("<h2>Libros faciles de leer:</h2>");
-for (let libro of facilitos) {
-    let divLibro = document.createElement("div");
-    divLibro.innerHTML = `<p><strong>${libro.nombre}</strong> </p>
-                        <p><strong>Cantidad de horas:</strong> ${libro.cantidadHoras}</p>
-                        <p>----------------</p>`;
-    document.body.appendChild(divLibro);
-}
+let division = document.createElement("div");
+division.className = "division"
+document.body.appendChild(division);
+
+
+    for (let libro of facilitos) {
+        let divLibro = document.createElement("div");
+        divLibro.className ="librosFaciles";
+        divLibro.innerHTML = `<p><strong>${libro.nombre}</strong> </p>
+                            <p><strong>Cantidad de horas:</strong> ${libro.cantidadHoras}</p>
+                            <p>----------------</p>`;
+        division.appendChild(divLibro);
+    }
 
 
 // LIBROS FACIL DE LEER (MAS DE 10 HORAS)
