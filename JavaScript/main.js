@@ -108,3 +108,10 @@ formAbrir.addEventListener('click', () => {
 formCerrar.addEventListener('click', () => {
     formContainer.classList.toggle('form-activo')
 })
+
+
+const suscribir = document.getElementById('suscribirse');
+suscribir.innerHTML = "<span>¿Querés enterarte de todas nuestras novedades?</span>"
+
+const titulo = document.getElementById('titulo');
+titulo.innerHTML = "El arte como artificio libros"

@@ -27,3 +27,19 @@
     opacity: 1;
 }
 
+#titulo {
+    text-align: center;
+    margin: 30px 5px;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    margin: 15px;
+}
+
+span {
+    margin: 10px;
+}
