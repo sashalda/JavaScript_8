@@ -136,3 +136,60 @@ titulo.innerHTML = "El arte como artificio"
 
 const subtitulo = document.getElementById('subtitulo');
 subtitulo.innerHTML = "libros y más";
+
+
+//FORMULARIO//
+
+const inputNombre = document.getElementById ('nombre')
+const inputApellido = document. getElementById ('apellido')
+const inputMail = document.getElementById ('mail')
+
+inputNombre.addEventListener ('change', () => {
+    const valor = inputNombre.value
+
+    if (valor.lenght <2) {
+        inputNombre.classList.add ('invalido')
+        inputNombre.classList.remove ('valido')
+    }
+
+    else {
+        inputNombre.classList.remove ('invalido')
+        inputNombre.classList.add ('valido')
+    }
+
+    console.log (valor)
+})
+
+inputApellido.addEventListener ('change', () => {
+    const valor = inputApellido.value
+
+    if (valor.lenght <2) {
+        inputApellido.classList.add ('invalido')
+        inputApellido.classList.remove ('valido')
+    }
+
+    else {
+        inputApellido.classList.remove ('invalido')
+        inputApellido.classList.add ('valido')
+    }
+
+    console.log (valor)
+})
+
+inputMail.addEventListener ('change', () => {
+
+    const valor = inputMail.value
+
+    if (valor.lenght <2) {
+        inputMail.classList.add ('invalido')
+        inputMail.classList.remove ('valido')
+    }
+
+    else {
+        inputMail.classList.remove ('invalido')
+        inputMail.classList.add ('valido')
+    }
+
+    console.log (valor)
+})
+

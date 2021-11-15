@@ -64,3 +64,12 @@ span {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+.invalido {
+    border: red 3px solid;
+}
+
+.valido {
+    border: greenyellow 3px solid;
+}
+
