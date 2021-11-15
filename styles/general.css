@@ -45,11 +45,18 @@
 
 #titulo {
   text-align: center;
-  margin: 30px 5px;
+  margin: 30px 5px 5px;
+  font-family: 'Petemoss', cursive;
+  font-size: 70px;
+}
+
+#subtitulo {
+  margin-bottom: 30px;
 }
 
 h2 {
   text-align: center;
+  font-family: 'Lora', serif;
 }
 
 p {

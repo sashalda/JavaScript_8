@@ -59,15 +59,19 @@ do {
 while(comprobacion !== "fin")
 */
 console.log(libros); 
-
 document.write("<h2>Listado de libros:</h2>");
+let division3 = document.createElement("div");
+division3.className = "division"
+document.body.appendChild(division3);
+
+
 for (let libro of libros) {
     let divLibro = document.createElement("div");
     divLibro.innerHTML = `<p><strong>${libro.nombre}</strong> </p>
                         <p><strong>Autor:</strong> ${libro.autor}</p>
                         <p><strong>Paginas:</strong> ${libro.paginas}</p>
                         <p>----------------</p>`;
-    document.body.appendChild(divLibro);
+    division3.appendChild(divLibro);
 }
 
 
@@ -85,22 +89,28 @@ document.body.appendChild(division);
         let divLibro = document.createElement("div");
         divLibro.className ="librosFaciles";
         divLibro.innerHTML = `<p><strong>${libro.nombre}</strong> </p>
-                            <p><strong>Cantidad de horas:</strong> ${libro.cantidadHoras}</p>
-                            <p>----------------</p>`;
+                            <p><strong>Cantidad de horas:</strong> ${libro.cantidadHoras}</p>`;
         division.appendChild(divLibro);
     }
 
 
 // LIBROS FACIL DE LEER (MAS DE 10 HORAS)
 
+
 var dificilitos = libros.filter(libro => libro.cantidadHoras >= 10);
 document.write("<h2>Libros dificiles de leer:</h2>");
+
+let division2 = document.createElement("div");
+division2.className = "division"
+document.body.appendChild(division2);
+
+
 for (let libro of dificilitos) {
     let divLibro = document.createElement("div");
     divLibro.innerHTML = `<p><strong>${libro.nombre}</strong> </p>
                         <p><strong>Cantidad de horas:</strong> ${libro.cantidadHoras}</p>
                         <p>----------------</p>`;
-    document.body.appendChild(divLibro);
+    division2.appendChild(divLibro);
 }
 
 /// DOM ///
@@ -122,4 +132,7 @@ const suscribir = document.getElementById('suscribirse');
 suscribir.innerHTML = "<span>¿Querés enterarte de todas nuestras novedades?</span>"
 
 const titulo = document.getElementById('titulo');
-titulo.innerHTML = "El arte como artificio libros"
+titulo.innerHTML = "El arte como artificio"
+
+const subtitulo = document.getElementById('subtitulo');
+subtitulo.innerHTML = "libros y más";
