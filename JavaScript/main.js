@@ -147,7 +147,7 @@ const inputMail = document.getElementById ('mail')
 inputNombre.addEventListener ('change', () => {
     const valor = inputNombre.value
 
-    if (valor.lenght <2) {
+    if (valor.length <2) {
         inputNombre.classList.add ('invalido')
         inputNombre.classList.remove ('valido')
     }
@@ -163,7 +163,7 @@ inputNombre.addEventListener ('change', () => {
 inputApellido.addEventListener ('change', () => {
     const valor = inputApellido.value
 
-    if (valor.lenght <2) {
+    if (valor.length <2) {
         inputApellido.classList.add ('invalido')
         inputApellido.classList.remove ('valido')
     }
@@ -180,7 +180,7 @@ inputMail.addEventListener ('change', () => {
 
     const valor = inputMail.value
 
-    if (valor.lenght <2) {
+    if (valor.length <2) {
         inputMail.classList.add ('invalido')
         inputMail.classList.remove ('valido')
     }
