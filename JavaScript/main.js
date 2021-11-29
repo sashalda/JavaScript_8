@@ -97,6 +97,8 @@ document.body.appendChild(division);
 // LIBROS FACIL DE LEER (MAS DE 10 HORAS)
 
 
+
+
 var dificilitos = libros.filter(libro => libro.cantidadHoras >= 10);
 document.write("<h2>Libros dificiles de leer:</h2>");
 
